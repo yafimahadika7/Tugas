@@ -214,6 +214,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@media (max-width: 480px) {
+  #header {
+    padding: 20px 0;
+    height: 70px;
+  }
+
+  #header #logo h1 {
+    font-size: 22px;
+  }
+
+  #header #logo img {
+    max-height: 30px;
+  }
+
+  #nav-menu-container {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: block;
+  }
+
+  .nav-menu li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+@media (max-width: 480px) {
+  #hero {
+    height: 60vh; /* Menyesuaikan tinggi hero agar lebih kompak di perangkat mobile */
+    background-size: cover;
+    background-position: center;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-top: 5px;
+  }
+
+  #hero h2 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  #hero .btn-get-started {
+    font-size: 14px;
+    padding: 6px 24px;
+  }
+}
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
@@ -605,6 +668,51 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 20px;
   text-align: center;
   margin-right: 50px;
+}
+
+/*--------------------------------------------------------------
+# Facts Section
+--------------------------------------------------------------*/
+@media (max-width: 480px) {
+  #facts {
+    padding: 60px 0 40px 0;
+  }
+
+  .section-header h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .section-description {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .counters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .counters .col-lg-2 {
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+
+  .counters .col-4 {
+    flex: 0 0 50%;
+    margin-bottom: 30px;
+  }
+
+  .counters span {
+    font-size: 36px;
+    color: #fff; /* Mengubah warna angka agar kontras dengan latar belakang */
+  }
+
+  .counters p {
+    font-size: 18px;
+  }
 }
 
 /* Call To Action Section
@@ -1095,4 +1203,90 @@ p {
   font-weight: 700;
   margin-bottom: 60px;
   margin-top: -20px;
+}
+
+/*--------------------------------------------------------------
+# Certificate Section untuk Android (Layar Kecil)
+--------------------------------------------------------------*/
+@media (max-width: 480px) {
+
+  /* Mengatur padding untuk certificate section agar lebih responsif */
+  #certificate {
+    padding: 60px 0;
+    height: auto; /* Menyesuaikan tinggi */
+  }
+
+  /* Mengatur ukuran font untuk judul section */
+  .section-header .section-title3 {
+    font-size: 28px;  /* Ukuran font lebih kecil untuk layar kecil */
+    margin-bottom: 30px;
+  }
+
+  /* Mengurangi margin di section header */
+  .section-header .section-title17 {
+    font-size: 28px;  /* Ukuran font lebih kecil */
+    margin-right: 20px;
+    margin-bottom: 40px; /* Mengurangi jarak bawah */
+  }
+
+  /* Mengatur filter agar lebih rapat */
+  #certificate #certificate-flters li {
+    font-size: 14px;  /* Ukuran font sedikit lebih besar */
+    padding: 8px 16px;  /* Mengurangi padding agar kompak */
+    margin: 0 5px;  /* Jarak antar item lebih kecil */
+  }
+
+  #certificate #certificate-flters li:hover, 
+  #certificate #certificate-flters li.filter-active {
+    background: #2dc997;
+    color: #fff;
+  }
+
+  /* Mengatur ukuran portfolio item untuk layar kecil */
+  #certificate .certificate-item {
+    height: 180px; /* Mengurangi tinggi untuk item portfolio */
+    margin-bottom: 20px;  /* Menambah jarak antar item */
+  }
+
+  /* Menyesuaikan ukuran gambar di certificate item */
+  #certificate .certificate-item img {
+    width: 100%;  /* Gambar mengisi lebar container */
+    height: auto;  /* Menjaga rasio gambar */
+    top: 0;
+  }
+
+  /* Mengurangi ukuran font dalam details untuk certificate item */
+  #certificate .certificate-item .details h4 {
+    font-size: 12px; /* Ukuran font lebih kecil */
+  }
+
+  #certificate .certificate-item .details span {
+    font-size: 11px;  /* Ukuran font lebih kecil */
+  }
+
+  /* Modal */
+  .modal-content {
+    width: 90%;  /* Menyesuaikan ukuran modal agar pas dengan layar kecil */
+    max-width: 600px;
+  }
+
+  /* Mengatur caption agar lebih rapat */
+  #caption {
+    font-size: 14px;
+  }
+
+  /* Mengatur tombol close agar lebih mudah diakses di layar kecil */
+  .close {
+    top: 10px;
+    right: 10px;
+    font-size: 30px;  /* Ukuran font lebih kecil untuk tombol close */
+  }
+
+  /* Menyembunyikan alt text jika diperlukan pada layar kecil */
+  .image-alt-text {
+    display: block; /* Menampilkan alt text */
+    font-size: 12px;  /* Ukuran font lebih kecil */
+    text-align: center;
+    padding: 5px;
+  }
 }
